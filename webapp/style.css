@@ -1,0 +1,175 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+#nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #A64B2A;
+	background-color: white;
+	text-decoration: none;
+	padding: 10px 50px;
+	z-index: 999;
+  }
+  
+  #logo {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 0;
+	margin: 0;
+	color: #ebe0e0;
+  }
+  
+  @media (max-width: 640px) {
+	#logo span {
+	  display: none;
+	}
+  }
+  
+  #logo img {
+	height: 42px;
+  }
+  
+  #nav a {
+	text-decoration: none;
+	color: black;
+  }
+  
+  #nav__links {
+	display: flex;
+	align-items: center;
+	column-gap: 2em;
+  }
+  
+  .nav__link {
+	color: #fff;
+	text-decoration: none;
+	transition: 1s;
+	border-bottom: 2px solid transparent;
+	transition: all 0.3s ease-in-out;
+	padding-bottom: 1px;
+  }
+  
+  @media (max-width: 520px) {
+	#nav__links {
+	  column-gap: 3em;
+	}
+  }
+  
+  .nav__link:hover {
+	color: rgb(230, 228, 228);
+	text-decoration: none;
+	border-color: rgb(0, 98, 204);
+  }
+  
+  #create__room__btn {
+	display: block;
+	background-color: transparent;
+	padding: 8px 24px;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 5px;
+  }
+  
+  #create__room__btn:hover {
+	background-color: rgb(0, 98, 204);
+  }
+  
+  .nav--list {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+  }
+.hero {
+	background-image: url('https://bangi.kptm.edu.my/images/kemudahan/al-ghazali-1.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+}
+
+.hero h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 1.5rem;
+	margin-bottom: 30px;
+}
+
+.button {
+	display: inline-block;
+	background-color: #007bff;
+	color: #fff;
+	border-radius: 5px;
+	padding: 12px 30px;
+	font-size: 1.2rem;
+	text-decoration: none;
+	transition: background-color 0.2s;
+}
+
+.button:hover {
+	background-color: #0062cc;
+}
+
+.features {
+	background-color: #f7f7f7;
+	padding: 100px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.feature-item {
+	max-width: 300px;
+	margin: 40px;
+	padding: 30px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	text-align: center;
+}
+
+.feature-item h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.feature-item p {
+	font-size: 1.2rem;
+	margin-bottom: 30px;
+}
+
+footer {
+	background-color: #1E90FF;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+	margin-top: 50px;
+}
+
+footer p {
+	font-size: 18px;
+}
+
